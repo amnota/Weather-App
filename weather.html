@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+      <link rel="stylesheet" href="weather.css">
+      <title>Weather App</title>
+   </head>
+   <body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <span class="nav_logo_circle">J</span>
+                <span class="nav_logo_name">June Same</span>
+            </a>
+            <div class="nav_menu" id="nav-menu">
+                <span class="nav_title">Menu</span>
+                <h3 class="nav_name">June</h3>
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="../main.html" class="nav_link active-link" id="main">Main</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link nav_link-button">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav_button">
+                 <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id ="home">
+            <h1 class="home_name">Weather App</h1>
+            <div class="home_container container grid">                
+                <div class="home_perfil">
+                    <div class="home_image">
+                        <img src="image/pic_weather.png" alt="image" class="home_img"  > 
+                    </div>
+                </div>
+                <div class="home_info">
+                    <p class="home_description">
+                        I developed a <b>Weather App</b> that fetches real-time weather data from an API. 
+                        The app displays current weather conditions, including temperature and humidity, 
+                        based on the user’s city input. This project demonstrates to work 
+                        with <b>APIs</b> and build a responsive, user-friendly interface.
+                    </p> 
+                    <a href="#projects" class="home_scroll">
+                        <div class="home_scroll_box">
+                            <i class="ri-arrow-drop-down-line"></i>
+                        </div>
+
+                        <span class="home_scroll_text" >Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="projects section" id="projects">
+            <h2 class="section_title_1">
+                <span>Projects</span>
+            </h2>
+            <img src="image/aircraft.png" id="aircraft">
+            <div class="app">
+                <div class="search">
+                    <input type="text" placeholder="Enter Location" spellcheck="false" >
+                    <button><img src="image/search.png" ></button>
+                </div>
+                <div class="error">
+                    <p>Invalid Location</p>
+                </div>
+                <div class="weather">
+                    <img src="image/clear.png" class="weatherIcon">
+                    <h1 class="temp">25°C</h1>
+                    <h2 class="location">Toronto</h2>
+                    <div class="detail">
+                        <div class="col">
+                            <img src="image/humidity.png"  id="humidityImg">
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p class="humidDetail">Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="image/wind.png" id="windImg" >
+                            <div>
+                                <p class="wind">12 km/hr</p>
+                                <p class="windDetail">Wind Speed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="contact section" id="contact">
+            <div class="contact_container grid">
+                <div class="contact_data">
+                    <h2 class="section_title_2">
+                        <span>Contact Me</span>
+                    </h2>
+                    <p class="contact_description_1">
+                        I will read all emails. Send me any 
+                        message you want and I'll get back to you.
+                    </p>
+                    <p class="contact_description_2">
+                        I need your <b>Name</b> and <b>Email Address</b>, but
+                        you won't recieve anything other than you reply.
+                    </p>
+                    <div class="geometric-box"></div>
+                </div>
+                <div class="contact_mail">
+                    <h2 class="contact_title">
+                        Send Me A Message
+                    </h2>
+                    <form action="" class="contact_form" id="contact-form">
+                        <div class="contact_group">
+                            <div class="contact_box">
+                                <input type="text" name="user_name" class="contact_input" id="name" required placeholder="Firstname">
+                                <label for="name" class="contact_label">Firstname</label>
+                            </div>
+                            <div class="contact_box">
+                                <input type="email" name="user_email" class="contact_input" id="email" required placeholder="Email Address">
+                                <label for="email" class="contact_label">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="contact_box">
+                            <input type="text" name="user_subject" class="contact_input" id="subject" required placeholder="Subject">
+                            <label for="subject" class="contact_label">Subject</label>
+                        </div>
+                        <div class="contact_box contact_area">
+                            <textarea name="user_message" id="message" class="contact_input" required placeholder="Message"></textarea>
+                            <label for="massage" class="contact_label">Message</label>
+                        </div>
+                        <p class="contact_message" id="contact-message"></p>
+                        <button type="submit" class="contact_button button">
+                            <i class="ri-send-plane-line"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_container container grid">
+          <span class="footer_copy">
+                &#169; All Right Reserved By
+                <a href="">June</a>
+          </span>
+          <ul class="footer_links">
+            <li>
+                <a href="#home" class="footer_link">Home</a>
+            </li>
+            <li>
+                <a href="#projects" class="footer_link">Project</a>
+            </li>
+          </ul>
+          
+        </div>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="weather.js"></script>
+   </body>
+</html>
